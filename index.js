@@ -1,15 +1,13 @@
 
 console.log("Question 1:");
-function maximum(num1 = 0, num2 = 0, num3 = 0) {
+function maximum(num1 , num2, num3 ) {
     var max = 0;
     if (num1 >= num2 && num1 >= num3) {
         max = num1;
-    } else {
+    } else if (num2 >= num1 && num2 >= num1) {
         max = num2;
-    }
-    if(num3 >= max){
-        max = num3;
-    }
+    } else if (num3 >= num1 && num3 >= num2){
+        max = num3;}
     return max;
 }
 console.log(maximum(12, 18, 3)); //18
@@ -24,7 +22,7 @@ function diceRoll() {
 }
 
 
-function isWinner(num) {
+function isWinner(number) {
     if (number== 4) {
         console.log("Winner");
     } else {
@@ -36,6 +34,7 @@ isWinner(number);
 
 
 //Question 3
+console.log("Question 3:");
 function fibonacci(number) {
     if (number == 0 || number == 1) {
         return number;
@@ -48,6 +47,7 @@ console.log(count); //21
 
 //Question 4
 
+console.log("Question 4:");
 function capitalise(location) {
     return location[0].toUpperCase() + location.substring(1);
 }
